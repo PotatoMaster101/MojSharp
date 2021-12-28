@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>Mojang API</Title>
+    <Description>Mojang API targetting .NET 6 and above</Description>
+    <Copyright>Copyright (c) 2021 PotatoMaster101</Copyright>
+    <PackageProjectUrl>https://github.com/PotatoMaster101/MojSharp</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/PotatoMaster101/MojSharp</RepositoryUrl>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Authentication\Microsoft" />
+  </ItemGroup>
+
+</Project>
